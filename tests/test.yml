@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ubuntu-disable-auto-update
+    - ansible-ubuntu-disable-auto-update
