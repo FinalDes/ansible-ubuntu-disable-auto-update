@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include ansible-ubuntu-disable-auto-update"
+      include_role:
+        name: "ansible-ubuntu-disable-auto-update"

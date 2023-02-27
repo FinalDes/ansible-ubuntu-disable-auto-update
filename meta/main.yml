@@ -1,7 +1,9 @@
 galaxy_info:
   author: Alex Alonso
   description: disable ubuntu auto update
-  company: your company (optional)
+  namespace: finaldes
+  role_name: ubuntu_disable_auto_update
+  # company: your company (optional)
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -16,7 +18,7 @@ galaxy_info:
   # - CC-BY-4.0
   license: MIT
 
-  min_ansible_version: 2.9
+  min_ansible_version: "2.9"
 
   # If this a Container Enabled role, provide the minimum Ansible Container version.
   # min_ansible_container_version:
@@ -27,6 +29,12 @@ galaxy_info:
   # To view available platforms and versions (or releases), visit:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
+  platforms:
+    - name: Ubuntu
+      versions:
+        - jammy
+        - bionic
+        - focal
   # platforms:
   # - name: Fedora
   #   versions:
