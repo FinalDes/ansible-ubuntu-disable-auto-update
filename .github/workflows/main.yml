@@ -52,7 +52,7 @@ jobs:
       - name: ansible syntax-check
         run: ansible-playbook tests/test.yml -i tests/inventory --syntax-check
       - name: molecule test
-        run: molecule test
+        run: molecule test --scenario-name docker
         env:
           PY_COLORS: '1'
           ANSIBLE_FORCE_COLOR: '1'
